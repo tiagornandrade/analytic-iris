@@ -1,6 +1,6 @@
 from dagster import RunRequest, sensor
 
-from analytic_dados_enem.jobs.say_hello import say_hello_job
+from analytic_iris.jobs.say_hello import say_hello_job
 
 
 @sensor(job=say_hello_job)

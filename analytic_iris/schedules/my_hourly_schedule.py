@@ -1,6 +1,6 @@
 from dagster import schedule
 
-from analytic_dados_enem.jobs.say_hello import say_hello_job
+from analytic_iris.jobs.say_hello import say_hello_job
 
 
 @schedule(cron_schedule="0 * * * *", job=say_hello_job, execution_timezone="US/Central")

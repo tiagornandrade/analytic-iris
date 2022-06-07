@@ -1,6 +1,7 @@
 from dagster import job
 
-from analytic_dados_enem.ops.hello import hello
+from analytic_iris.ops.hello import hello
+
 
 @job
 def say_hello_job():

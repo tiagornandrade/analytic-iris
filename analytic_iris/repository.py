@@ -1,8 +1,8 @@
 from dagster import repository
 
-from analytic_dados_enem.jobs.say_hello import say_hello_job
-from analytic_dados_enem.schedules.my_hourly_schedule import my_hourly_schedule
-from analytic_dados_enem.sensors.my_sensor import my_sensor
+from analytic_iris.jobs.say_hello import say_hello_job
+from analytic_iris.schedules.my_hourly_schedule import my_hourly_schedule
+from analytic_iris.sensors.my_sensor import my_sensor
 
 
 @repository

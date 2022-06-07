@@ -1,4 +1,4 @@
-# analytic_dados_enem
+# analytic_iris
 
 Welcome to your new Dagster repository.
 
@@ -9,26 +9,28 @@ Welcome to your new Dagster repository.
 | `README.md`              | A description and guide for this code repository                                  |
 | `setup.py`               | A build script with Python package dependencies for this code repository          |
 | `workspace.yaml`         | A file that specifies the location of the user code for Dagit and the Dagster CLI |
-| `analytic_dados_enem/`       | A Python directory that contains code for your Dagster repository                 |
-| `analytic_dados_enem_tests/` | A Python directory that contains tests for `analytic_dados_enem`                      |
+| `analytic_iris/`       | A Python directory that contains code for your Dagster repository                 |
+| `analytic_iris_tests/` | A Python directory that contains tests for `analytic_iris`                      |
 
 ## Getting up and running
 
 1. Create a new Python environment and activate.
 
 **Pyenv**
+
 ```bash
 export PYTHON_VERSION=X.Y.Z
 pyenv install $PYTHON_VERSION
-pyenv virtualenv $PYTHON_VERSION analytic_dados_enem
-pyenv activate analytic_dados_enem
+pyenv virtualenv $PYTHON_VERSION analytic_iris
+pyenv activate analytic_iris
 ```
 
 **Conda**
+
 ```bash
 export PYTHON_VERSION=X.Y.Z
-conda create --name analytic_dados_enem python=PYTHON_VERSION
-conda activate analytic_dados_enem
+conda create --name analytic_iris python=PYTHON_VERSION
+conda activate analytic_iris
 ```
 
 2. Once you have activated your Python environment, install your repository as a Python package. By
@@ -50,7 +52,7 @@ export DAGSTER_HOME=~/dagster_home
 ```
 
 2. Start the [Dagit process](https://docs.dagster.io/overview/dagit). This will start a Dagit web
-server that, by default, is served on http://localhost:3000.
+server that, by default, is served on <http://localhost:3000>.
 
 ```bash
 dagit
@@ -67,15 +69,16 @@ dagster-daemon run
 
 ## Local Testing
 
-Tests can be found in `analytic_dados_enem_tests` and are run with the following command:
+Tests can be found in `analytic_iris_tests` and are run with the following command:
 
 ```bash
-pytest analytic_dados_enem_tests
+pytest analytic_iris_tests
 ```
 
-As you create Dagster ops and graphs, add tests in `analytic_dados_enem_tests/` to check that your
+As you create Dagster ops and graphs, add tests in `analytic_iris_tests/` to check that your
 code behaves as desired and does not break over time.
 
 For hints on how to write tests for ops and graphs in Dagster,
 [see our documentation tutorial on Testing](https://docs.dagster.io/tutorial/testable).
+
 # analytic-dados-enem

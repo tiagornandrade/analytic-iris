@@ -1,4 +1,4 @@
-from analytic_dados_enem.ops.hello import hello
+from analytic_iris.ops.hello import hello
 
 
 def test_hello():

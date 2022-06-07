@@ -1,4 +1,4 @@
-from analytic_dados_enem.jobs.say_hello import say_hello_job
+from analytic_iris.jobs.say_hello import say_hello_job
 
 
 def test_say_hello():
