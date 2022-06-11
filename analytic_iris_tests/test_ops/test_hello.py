@@ -1,12 +1,8 @@
-from analytic_iris.ops.hello import hello
+from analytic_iris.ops.iris import extract_iris_dataset, aplica_filtros
 
 
-def test_hello():
-    """
-    This is an example test for a Dagster op.
+def test_extract_iris_dataset():
+    assert extract_iris_dataset() == "Hello, Dagster!"
 
-    For hints on how to test your Dagster ops, see our documentation tutorial on Testing:
-    https://docs.dagster.io/concepts/testing
-    """
-
-    assert hello() == "Hello, Dagster!"
+def test_aplica_filtros():
+    assert aplica_filtros() == "Hello, Dagster!"
