@@ -1,1 +1,1 @@
-from .repository_iris import iris
+from .repository import iris

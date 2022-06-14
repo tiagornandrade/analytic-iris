@@ -12,12 +12,13 @@ Welcome to your new Dagster repository.
 | `analytic_iris/`       | A Python directory that contains code for your Dagster repository                 |
 | `analytic_iris_tests/` | A Python directory that contains tests for `analytic_iris`                      |
 
+![alt text](flow.png)
+
 ## Getting up and running
 
 1. Create a new Python environment and activate.
 
 **Pyenv**
-
 ```bash
 export PYTHON_VERSION=X.Y.Z
 pyenv install $PYTHON_VERSION
@@ -26,7 +27,6 @@ pyenv activate analytic_iris
 ```
 
 **Conda**
-
 ```bash
 export PYTHON_VERSION=X.Y.Z
 conda create --name analytic_iris python=PYTHON_VERSION
@@ -52,7 +52,7 @@ export DAGSTER_HOME=~/dagster_home
 ```
 
 2. Start the [Dagit process](https://docs.dagster.io/overview/dagit). This will start a Dagit web
-server that, by default, is served on <http://localhost:3000>.
+server that, by default, is served on http://localhost:3000.
 
 ```bash
 dagit
